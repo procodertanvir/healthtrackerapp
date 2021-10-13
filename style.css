@@ -1,0 +1,316 @@
+body,h1,h2,h3,h4,h5,h6,p,span,a{
+   font-family: 'Work Sans', sans-serif;
+}
+
+img{
+   max-width: 100%;
+}
+
+/* Navbar Style */
+.navBarSection{
+   z-index: 2;
+   box-shadow: 4px 4px 30px 0 rgba(98, 120, 223,.18);
+}
+.webNav a img{
+   width: 13%;
+   position: relative;
+   top: -3px;
+   left: 0;
+}
+.webNav a .h4{
+   transition: 400ms;
+}
+.webNav a .h4:hover{
+   color: rgb(165, 165, 165);
+}
+
+.webNav .btn-lg{
+   font-size: 16px;
+   font-weight: bold;
+}
+.webNav .btn-lg:hover{
+   box-shadow: 4px 4px 30px 0 rgba(98, 120, 223,.6);
+}
+
+
+/* Slider Section */
+.sliderSection {
+	background: url(img/mbr-10.jpg) no-repeat center center;
+	background-size: cover;
+	padding: 120px 0;
+	position: relative;
+	z-index: 1;
+}
+
+.sliderSection::after{
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background: rgba(0,0,0,.5);
+   z-index: -1;
+}
+
+.sliderCaption {
+	padding-bottom: 50px;
+}
+
+.sliderCaption h4 {
+   font-weight: 400;
+   margin-bottom: 40px;
+ }
+ .sliderCaption h1 {
+   font-size: 45px;
+   margin-bottom: 50px;
+ }
+ .sliderCaption input {
+   width: 29%;
+   padding: 18px 8px;
+   font-size: 20px;
+   border-radius: 5px;
+   border: none;
+ }
+
+ .sliderCaption input:focus{
+    box-shadow: 4px 4px 30px 0 rgba(98, 120, 223,.8);
+ }
+ .sliderCaption button {
+	width: 22%;
+	font-size: 22px;
+	font-weight: 600;
+	padding: 17px 5px;
+	border-radius: 5px;
+	margin-left: 10px;
+	background: #5ba533;
+   transition: 400ms;
+}
+
+.sliderCaption button:hover{
+   background: #000;
+}
+
+
+.counterText h1{
+   font-weight: 500;
+}
+.counterText .h5{
+   font-weight: 400;
+}
+
+
+
+.about{
+   background: #f7f9ff;
+}
+.aboutText h1{
+   font-weight: 500;
+   letter-spacing: -.1rem;
+}
+.aboutText p{
+   color: black;
+   font-weight: 400;
+   font-size: 20.5px;
+}
+
+.about img{
+   width: 380px;
+}
+
+
+.serviceItem {
+	height: 250px;
+	background: #fff;
+	box-shadow: 4px 4px 30px 0 rgba(37, 41, 58, 0.1);
+	border-radius: 0 5px 5px 0;
+   transition: 350ms;
+}
+.sLeft {
+	width: 40%;
+	overflow: hidden;
+	border-radius: 5px 0 0 5px;
+}
+.sLeft img {
+	height: 105%;
+	width: auto;
+	max-width: inherit;
+	position: relative;
+	top: -10px;
+	left: -100px;
+}
+.serviceSection .col-xxl-4:nth-child(2) .serviceItem .sLeft img{
+   position: relative;
+   top: 0;
+   left: -35px;
+}
+.serviceSection .col-xxl-4:nth-child(5) .serviceItem .sLeft img{
+   position: relative;
+   top: 0;
+   left: -35px;
+}
+.serviceSection .col-xxl-4:nth-child(3) .serviceItem .sLeft img {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.sRight {
+	width: 60%;
+	padding: 25px;
+}
+.sRight p{
+   font-weight: 300;
+}
+
+.serviceItem:hover{
+   box-shadow: 4px 4px 30px 0 rgba(98, 120, 223,.35);
+}
+
+.sectionTitle h1 {
+	font-weight: 400;
+	font-size: 45px;
+}
+.sectionTitle p {
+	font-weight: 300;
+	font-size: 25px;
+}
+
+
+
+/* Feature Section */
+.featureSection h1 {
+	font-size: 45px;
+	font-weight: 400;
+}
+.f1{
+   position: relative;
+}
+.f1::after{
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background:  rgba(98, 120, 223,.7);
+   opacity: 0;
+   visibility: hidden;
+   transition: 400ms;
+}
+
+.f1:hover::after{
+   opacity: 1;
+   visibility: visible;
+}
+
+
+.sectionBg{
+   background-color: #F7F9FF;
+}
+/* Pricing Section */
+.pricingSection .col h1 {
+	font-size: 60px;
+	font-weight: 400;
+}
+.pricingSection .col p {
+	font-size: 25px;
+}
+.pricingItem{}
+.pricingItem h1 {
+	font-size: 45px;
+}
+.pricingItem p{}
+.pricingItem ul{}
+.pricingItem ul li {
+	font-weight: 300;
+	margin-bottom: 30px;
+}
+.pricingItem ul li span {
+	width: 30px;
+	display: inline-block;
+	color: #6278DF;
+	text-align: center;
+	margin-right: 10px;
+	font-size: 25px;
+	font-weight: bold;
+}
+.pItemButton{}
+.pItemButton a{
+   transition: 500ms;
+}
+
+
+.pricingItem:hover .pItemButton a{
+   background: #6278DF;
+   color: #fff;
+   box-shadow: rgba(50, 57, 88,.9);
+}
+
+
+.testimonialSection .text-center h4 {
+	font-weight: 300;
+}
+.testimonialSection .text-center h1 {
+	font-size: 44px;
+	font-weight: 400;
+}
+
+.testimonialSection .col{
+   max-width: 900px;
+   margin: 0 auto;
+}
+.testimonialSection .col .display-1{
+   opacity: .1;
+}
+
+.authorInfo{
+   width: 230px;
+   margin: 0 auto;
+}
+.authorInfo img{
+   width: 85px;
+   margin-right: 10px;
+}
+.authorDetails{
+   text-align: left;
+   position: relative;
+   top: 15px;
+}
+
+
+
+
+/* Team Section */
+.card img{
+   width: 130px;
+   margin-top: -70px;
+   margin-left: 12px;
+   box-shadow: 4px 2px 20px 0 rgba(50, 57, 88,.35);
+}
+.member{
+   transition: 400ms;
+   margin-top: 50px;
+}
+.member:hover{
+   box-shadow: 4px 2px 20px 0 rgba(50, 57, 88,.15);
+}
+.member button{
+   transition: 400ms;
+}
+.member button:hover{
+   background: rgb(41, 41, 41);
+   color: #fff;
+   box-shadow: 4px 2px 20px 0 rgba(50, 57, 88,.2);
+   border-radius: 5px;
+}
+
+
+/* Get App Section */
+.getAppSection{
+   max-width: 1260px;
+   margin: 0 auto;
+}
+.gas-h1{
+   font-size: 49px;
+   font-weight: 400;
+}
